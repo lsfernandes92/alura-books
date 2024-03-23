@@ -6,6 +6,6 @@ navButtons.forEach(button => {
 });
 
 function filterBooksByCategory(category) {
-  let filteredBooks = books.filter(book => book.categoria === category);
+  let filteredBooks = booksWithDiscount.filter(book => book.categoria === category);
   showBooks(filteredBooks);
 }
