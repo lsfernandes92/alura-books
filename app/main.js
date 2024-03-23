@@ -6,5 +6,6 @@ async function getBooks() {
   const request = await fetch(apiEndpoint);
   const books = await request.json();
 
-  showBooks(books);
+  const booksWithDiscount = applyDiscount(books);
+  showBooks(booksWithDiscount);
 }
