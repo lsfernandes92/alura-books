@@ -1,7 +1,7 @@
 const booksWrapper = document.querySelector("#livros");
 
 function showBooks(bookList) {
-  booksWrapper.innerHTML = ''
+  booksWrapper.innerHTML = '';
   
   bookList.forEach(book => {
     booksWrapper.innerHTML += `

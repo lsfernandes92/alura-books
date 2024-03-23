@@ -1,6 +1,6 @@
 const apiEndpoint = "https://guilhermeonrails.github.io/casadocodigo/livros.json";
 
-let books = []
+let books = [];
 
 getBooks();
 
