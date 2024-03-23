@@ -12,7 +12,7 @@ function showBooks(bookList) {
           ${book.titulo}
         </h2>
         <p class="livro__descricao">${book.autor}</p>
-        <p class="livro__preco" id="preco">${toBrlCurrency(book.preco)}</p>
+        <p class="livro__preco" id="preco">${toBrlCurrency(book.discountedPrice)}</p>
         <div class="tags">
           <span class="tag">${capitalize(book.categoria)}</span>
         </div>

@@ -3,6 +3,6 @@ function applyDiscount(books) {
 
   return books.map(book => {
     bookPrice = book.preco;
-    return {...book, price: book.preco = bookPrice - (bookPrice * discount)}
+    return {...book, discountedPrice: book.preco = bookPrice - (bookPrice * discount)}
   });
 }
