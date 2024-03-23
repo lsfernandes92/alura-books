@@ -4,9 +4,10 @@ function showBooks(bookList) {
   booksWrapper.innerHTML = '';
   
   bookList.forEach(book => {
+    const availability = book.quantidade > 0 ? 'livro__imagens' : 'indisponivel'
     booksWrapper.innerHTML += `
       <div class="livro">
-        <img class="livro__imagens" src="${book.imagem}"
+        <img class="${availability}" src="${book.imagem}"
           alt="${book.alt}" />
         <h2 class="livro__titulo">
           ${book.titulo}
