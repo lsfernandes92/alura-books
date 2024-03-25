@@ -10,5 +10,6 @@ async function getBooks() {
   books = await request.json();
 
   booksWithDiscount = applyDiscount(books);
+  
   showBooks(booksWithDiscount);
 }

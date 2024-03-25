@@ -6,6 +6,15 @@ navButtons.forEach(button => {
 });
 
 function filterBooksByCategory(category) {
+  sectionTotalPriceAllAvailableBooks.innerHTML = "";
+
   let filteredBooks = booksWithDiscount.filter(book => book.categoria === category);
+  
   showBooks(filteredBooks);
+
+  if (category == "availables") {
+    sortByAvaiability();
+  } else if(category == "by-price") {
+    sortBooksByPrice()
+  }
 }
